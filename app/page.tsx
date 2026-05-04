@@ -41,7 +41,7 @@ export default function Home() {
             className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed"
           >
             Ustalarni, korxonalarni va mijozlarni bitta aqlli ekotizimda birlashtiring.
-            Xizmatlarni boshqarish hech qachon bunchalik oson bo'lmagan.
+            Xizmatlarni boshqarish hech qachon bunchalik oson bo&apos;lmagan.
           </motion.p>
 
           <motion.div
@@ -88,7 +88,7 @@ export default function Home() {
   );
 }
 
-function FeatureCard({ icon, title, desc }: { icon: any, title: string, desc: string }) {
+function FeatureCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
   return (
     <motion.div
       whileHover={{ y: -10 }}
